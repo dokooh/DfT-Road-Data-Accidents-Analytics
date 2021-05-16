@@ -1,0 +1,250 @@
+{
+    "uid": "dd207dae-0a7b-474a-8046-c330cb837ba1",
+    "name": "4_Default_NeuralNetwork",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        94771.59777219882,
+                        150498.13542017632,
+                        0.4522387894637908,
+                        0.7045368686820193,
+                        0.7635103188422397,
+                        1.918261186885278,
+                        1.4647794612550635,
+                        1680.6604871507247,
+                        1.6769739056110449,
+                        1165.4827397321906,
+                        1.9946758365238433,
+                        1.7251298796555623,
+                        1.80415806061353,
+                        0.5994155609317269
+                    ],
+                    "mean": [
+                        452696.7559442781,
+                        278014.3490410503,
+                        2.771651995038872,
+                        1.8388541004930876,
+                        1.304322836313035,
+                        4.116193241975981,
+                        4.185059140272862,
+                        860.2544241764225,
+                        5.212678101461113,
+                        308.6646398644765,
+                        0.8626009619747709,
+                        2.036875699549263,
+                        1.6499379859031371,
+                        1.2918746407719999
+                    ],
+                    "var": [
+                        8981655744.29544,
+                        22649688764.949726,
+                        0.20451992269567493,
+                        0.49637219933226484,
+                        0.5829480069785786,
+                        3.679725981110515,
+                        2.145578870114674,
+                        2824619.673069712,
+                        2.8122414801003615,
+                        1358350.0166136532,
+                        3.978731692812094,
+                        2.9760731016804147,
+                        3.254986307676773,
+                        0.35929901468709674
+                    ],
+                    "n_samples_seen": 66114,
+                    "n_features_in": 14,
+                    "columns": [
+                        "Location_Easting_OSGR",
+                        "Location_Northing_OSGR",
+                        "Accident_Severity",
+                        "Number_of_Vehicles",
+                        "Number_of_Casualties",
+                        "Day_of_Week",
+                        "1st_Road_Class",
+                        "1st_Road_Number",
+                        "Road_Type",
+                        "2nd_Road_Number",
+                        "Pedestrian_Crossing-Physical_Facilities",
+                        "Light_Conditions",
+                        "Weather_Conditions",
+                        "Road_Surface_Conditions"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "categorical_y": {
+                "1": 0,
+                "2": 1,
+                "3": 2
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "Location_Easting_OSGR": [
+                        "scale_normal"
+                    ],
+                    "Location_Northing_OSGR": [
+                        "scale_normal"
+                    ],
+                    "Accident_Severity": [
+                        "scale_normal"
+                    ],
+                    "Number_of_Vehicles": [
+                        "scale_normal"
+                    ],
+                    "Number_of_Casualties": [
+                        "scale_normal"
+                    ],
+                    "Day_of_Week": [
+                        "scale_normal"
+                    ],
+                    "1st_Road_Class": [
+                        "scale_normal"
+                    ],
+                    "1st_Road_Number": [
+                        "scale_normal"
+                    ],
+                    "Road_Type": [
+                        "scale_normal"
+                    ],
+                    "2nd_Road_Number": [
+                        "scale_normal"
+                    ],
+                    "Pedestrian_Crossing-Physical_Facilities": [
+                        "scale_normal"
+                    ],
+                    "Light_Conditions": [
+                        "scale_normal"
+                    ],
+                    "Weather_Conditions": [
+                        "scale_normal"
+                    ],
+                    "Road_Surface_Conditions": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "0.24.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "bd78cc31-fb96-4c8f-a801-16d9ddf33ab9",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "dense_1_size": 32,
+                "dense_2_size": 16,
+                "learning_rate": 0.05,
+                "seed": 4,
+                "num_class": 3,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Location_Easting_OSGR": [
+                    "scale_normal"
+                ],
+                "Location_Northing_OSGR": [
+                    "scale_normal"
+                ],
+                "Accident_Severity": [
+                    "scale_normal"
+                ],
+                "Number_of_Vehicles": [
+                    "scale_normal"
+                ],
+                "Number_of_Casualties": [
+                    "scale_normal"
+                ],
+                "Day_of_Week": [
+                    "scale_normal"
+                ],
+                "1st_Road_Class": [
+                    "scale_normal"
+                ],
+                "1st_Road_Number": [
+                    "scale_normal"
+                ],
+                "Road_Type": [
+                    "scale_normal"
+                ],
+                "2nd_Road_Number": [
+                    "scale_normal"
+                ],
+                "Pedestrian_Crossing-Physical_Facilities": [
+                    "scale_normal"
+                ],
+                "Light_Conditions": [
+                    "scale_normal"
+                ],
+                "Weather_Conditions": [
+                    "scale_normal"
+                ],
+                "Road_Surface_Conditions": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_5/X.parquet",
+            "y_path": "AutoML_5/y.parquet",
+            "results_path": "AutoML_5"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "dense_1_size": 32,
+            "dense_2_size": 16,
+            "learning_rate": 0.05,
+            "seed": 4,
+            "num_class": 3,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "4_Default_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "4_Default_NeuralNetwork/learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "4_Default_NeuralNetwork/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 0.5512112560366305,
+    "train_time": 23.482752799987793,
+    "is_stacked": false
+}

@@ -1,0 +1,16 @@
+if (Pedestrian_Crossing-Human_Control > -0.5) and (Location_Northing_OSGR <= 273605.0) and (Pedestrian_Crossing-Physical_Facilities > -0.5) then class: 1 (proba: 76.6%) | based on 35,551 samples
+
+if (Pedestrian_Crossing-Human_Control > -0.5) and (Location_Northing_OSGR > 273605.0) and (Weather_Conditions <= 8.5) then class: 1 (proba: 67.2%) | based on 27,167 samples
+
+if (Pedestrian_Crossing-Human_Control <= -0.5) and (Location_Northing_OSGR <= 207883.0) and (Location_Easting_OSGR <= 566614.0) then class: 3 (proba: 99.84%) | based on 1,934 samples
+
+if (Pedestrian_Crossing-Human_Control > -0.5) and (Location_Northing_OSGR > 273605.0) and (Weather_Conditions > 8.5) then class: 2 (proba: 71.41%) | based on 857 samples
+
+if (Pedestrian_Crossing-Human_Control > -0.5) and (Location_Northing_OSGR <= 273605.0) and (Pedestrian_Crossing-Physical_Facilities <= -0.5) then class: 3 (proba: 99.8%) | based on 504 samples
+
+if (Pedestrian_Crossing-Human_Control <= -0.5) and (Location_Northing_OSGR > 207883.0) and (Location_Easting_OSGR > 361239.0) then class: 2 (proba: 97.75%) | based on 89 samples
+
+if (Pedestrian_Crossing-Human_Control <= -0.5) and (Location_Northing_OSGR > 207883.0) and (Location_Easting_OSGR <= 361239.0) then class: 3 (proba: 66.67%) | based on 9 samples
+
+if (Pedestrian_Crossing-Human_Control <= -0.5) and (Location_Northing_OSGR <= 207883.0) and (Location_Easting_OSGR > 566614.0) then class: 2 (proba: 100.0%) | based on 3 samples
+
