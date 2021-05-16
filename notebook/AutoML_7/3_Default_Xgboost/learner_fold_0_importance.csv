@@ -1,0 +1,16 @@
+feature,mean_importance
+Day_of_Week,0.000265224962720656
+2nd_Road_Number,0.0061585114646522275
+Number_of_Casualties,0.010571710759901643
+Light_Conditions,0.010652898541987277
+Number_of_Vehicles,0.015745531852931993
+Road_Type,0.017250563802679687
+Weather_Conditions,0.01866112792871888
+Accident_Severity,0.0240872246592454
+Carriageway_Hazards,0.03995992666375261
+Road_Surface_Conditions,0.04102317384431653
+Special_Conditions_at_Site,0.05061767015809075
+1st_Road_Class,0.0667517028345623
+1st_Road_Number,0.11383299395927557
+Pedestrian_Crossing-Human_Control,0.1271936746583626
+Pedestrian_Crossing-Physical_Facilities,0.13444382680276898
