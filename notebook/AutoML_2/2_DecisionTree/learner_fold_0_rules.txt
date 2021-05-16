@@ -1,0 +1,6 @@
+if (Did_Police_Officer_Attend_Scene_of_Accident <= 1.5) then class: 1 (proba: 100.0%) | based on 45,783 samples
+
+if (Did_Police_Officer_Attend_Scene_of_Accident > 1.5) and (Did_Police_Officer_Attend_Scene_of_Accident <= 2.5) then class: 2 (proba: 100.0%) | based on 14,762 samples
+
+if (Did_Police_Officer_Attend_Scene_of_Accident > 1.5) and (Did_Police_Officer_Attend_Scene_of_Accident > 2.5) then class: 3 (proba: 100.0%) | based on 5,569 samples
+

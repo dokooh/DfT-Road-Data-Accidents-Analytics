@@ -1,0 +1,10 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Did_Police_Officer_Attend_Scene_of_Accident <= 1.5\nsamples = 94028\nvalue = [65050, 21030, 7948]\nclass = No", fillcolor="#efb388"] ;
+1 [label="samples = 65050\nvalue = [65050, 0, 0]\nclass = No", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Did_Police_Officer_Attend_Scene_of_Accident <= 2.5\nsamples = 28978\nvalue = [0, 21030, 7948]\nclass = Yes", fillcolor="#84efb1"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="samples = 21030\nvalue = [0, 21030, 0]\nclass = Yes", fillcolor="#39e581"] ;
+2 -> 3 ;
