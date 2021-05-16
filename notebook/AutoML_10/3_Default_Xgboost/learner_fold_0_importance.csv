@@ -1,0 +1,13 @@
+feature,mean_importance
+Day_of_Week,0.0009017366234485458
+Number_of_Casualties,0.010196366339890938
+Light_Conditions,0.011321894342276817
+Number_of_Vehicles,0.016905554667547507
+Road_Type,0.0185973044659556
+Weather_Conditions,0.020569814358173445
+Accident_Severity,0.02301495415580699
+Carriageway_Hazards,0.03568249397480887
+Road_Surface_Conditions,0.039988501085029805
+Special_Conditions_at_Site,0.04408644881546351
+Pedestrian_Crossing-Human_Control,0.15267294791085767
+Pedestrian_Crossing-Physical_Facilities,0.16636777196659072

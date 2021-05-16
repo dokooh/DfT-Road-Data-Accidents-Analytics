@@ -1,0 +1,16 @@
+feature,shap_importance
+Pedestrian_Crossing-Human_Control,0.09095272805830998
+Accident_Severity,0.0631670630039648
+Pedestrian_Crossing-Physical_Facilities,0.0593394293008814
+Weather_Conditions,0.03196517405586926
+1st_Road_Class,0.021186187777035525
+1st_Road_Number,0.004083419710560985
+Number_of_Casualties,0.003209623765345994
+Road_Surface_Conditions,0.00264683025969079
+Carriageway_Hazards,0.0016492354296133186
+Road_Type,0.0008781480119565048
+Special_Conditions_at_Site,0.0003809172679454443
+Number_of_Vehicles,0.0002215581335365308
+2nd_Road_Number,8.267139892276161e-05
+Day_of_Week,7.033162205766959e-06
+Light_Conditions,2.8729854494068764e-06

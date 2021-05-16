@@ -1,0 +1,14 @@
+if (Pedestrian_Crossing-Human_Control > -0.5) and (Pedestrian_Crossing-Physical_Facilities > -0.5) and (Weather_Conditions <= 8.5) then class: 1 (proba: 73.02%) | based on 62,821 samples
+
+if (Pedestrian_Crossing-Human_Control > -0.5) and (Pedestrian_Crossing-Physical_Facilities > -0.5) and (Weather_Conditions > 8.5) then class: 2 (proba: 61.34%) | based on 1,508 samples
+
+if (Pedestrian_Crossing-Human_Control <= -0.5) and (1st_Road_Number <= 5269.0) and (Carriageway_Hazards > -0.5) then class: 3 (proba: 97.71%) | based on 1,484 samples
+
+if (Pedestrian_Crossing-Human_Control <= -0.5) and (1st_Road_Number <= 5269.0) and (Carriageway_Hazards <= -0.5) then class: 3 (proba: 91.92%) | based on 681 samples
+
+if (Pedestrian_Crossing-Human_Control > -0.5) and (Pedestrian_Crossing-Physical_Facilities <= -0.5) and (Accident_Severity > 2.5) then class: 3 (proba: 99.62%) | based on 531 samples
+
+if (Pedestrian_Crossing-Human_Control > -0.5) and (Pedestrian_Crossing-Physical_Facilities <= -0.5) and (Accident_Severity <= 2.5) then class: 3 (proba: 96.55%) | based on 29 samples
+
+if (Pedestrian_Crossing-Human_Control <= -0.5) and (1st_Road_Number > 5269.0) then class: 2 (proba: 100.0%) | based on 2 samples
+
