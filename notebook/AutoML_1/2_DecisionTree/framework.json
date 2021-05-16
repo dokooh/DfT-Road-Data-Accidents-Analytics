@@ -1,5 +1,5 @@
 {
-    "uid": "29f48782-788c-4c87-b63f-586304c20c2b",
+    "uid": "a45b4023-fd66-4b54-bd28-7f931ebbb2bd",
     "name": "2_DecisionTree",
     "preprocessing": [
         {
@@ -10,7 +10,11 @@
             },
             "ml_task": "multiclass_classification",
             "params": {
-                "columns_preprocessing": {},
+                "columns_preprocessing": {
+                    "Accident_Severity": [
+                        "categorical_to_int"
+                    ]
+                },
                 "target_preprocessing": [
                     "na_exclude",
                     "categorical_to_int"
@@ -24,7 +28,7 @@
             "library_version": "0.24.1",
             "algorithm_name": "Decision Tree",
             "algorithm_short_name": "Decision Tree",
-            "uid": "0d02ad3d-857f-43bb-ad1e-de2385362b3e",
+            "uid": "b74e0aa1-76f7-4914-8ab0-5dcf15ec1eea",
             "params": {
                 "model_type": "Decision Tree",
                 "ml_task": "multiclass_classification",
@@ -47,7 +51,11 @@
             "max_cols_limit": null
         },
         "preprocessing": {
-            "columns_preprocessing": {},
+            "columns_preprocessing": {
+                "Accident_Severity": [
+                    "categorical_to_int"
+                ]
+            },
             "target_preprocessing": [
                 "na_exclude",
                 "categorical_to_int"
@@ -88,7 +96,7 @@
     ],
     "predictions_fname": "2_DecisionTree/predictions_validation.csv",
     "metric_name": "logloss",
-    "final_loss": 1.9999999999893993e-06,
-    "train_time": 51.80681085586548,
+    "final_loss": 0.6971661214724714,
+    "train_time": 24.80108380317688,
     "is_stacked": false
 }

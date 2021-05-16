@@ -11,13 +11,43 @@ digraph G {
     node2 [margin="0" shape=none label=<<table border="0">
             
             <tr>
-                    <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/node2_10183.svg"/></td>
+                    <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/node2_6418.svg"/></td>
+            </tr>
+            </table>>]
+	node5 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/node5_6418.svg"/></td>
+            </tr>
+            </table>>]
+	node1 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/node1_6418.svg"/></td>
+            </tr>
+            </table>>]
+	node9 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/node9_6418.svg"/></td>
+            </tr>
+            </table>>]
+	node12 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/node12_6418.svg"/></td>
+            </tr>
+            </table>>]
+	node8 [margin="0" shape=none label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/node8_6418.svg"/></td>
             </tr>
             </table>>]
 	node0 [margin="0" shape=none label=<<table border="0">
             
             <tr>
-                    <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/node0_10183.svg"/></td>
+                    <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/node0_6418.svg"/></td>
             </tr>
             </table>>]
     node2 -> leaf3 [penwidth=0.3 color="#444443" label=<>]
@@ -28,30 +58,100 @@ digraph G {
                 leaf3 -> leaf4 [style=invis]
             }
             
-	node0 -> leaf1 [penwidth=0.3 color="#444443" label=<&lt;>]
-	node0 -> node2 [penwidth=0.3 color="#444443" label=<&ge;>]
+	node5 -> leaf6 [penwidth=0.3 color="#444443" label=<>]
+	node5 -> leaf7 [penwidth=0.3 color="#444443" label=<>]
 	
             {
                 rank=same;
-                leaf1 -> node2 [style=invis]
+                leaf6 -> leaf7 [style=invis]
             }
             
-    leaf1 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+	node1 -> node2 [penwidth=0.3 color="#444443" label=<>]
+	node1 -> node5 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                node2 -> node5 [style=invis]
+            }
+            
+	node9 -> leaf10 [penwidth=0.3 color="#444443" label=<>]
+	node9 -> leaf11 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                leaf10 -> leaf11 [style=invis]
+            }
+            
+	node12 -> leaf13 [penwidth=0.3 color="#444443" label=<>]
+	node12 -> leaf14 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                leaf13 -> leaf14 [style=invis]
+            }
+            
+	node8 -> node9 [penwidth=0.3 color="#444443" label=<>]
+	node8 -> node12 [penwidth=0.3 color="#444443" label=<>]
+	
+            {
+                rank=same;
+                node9 -> node12 [style=invis]
+            }
+            
+	node0 -> node1 [penwidth=0.3 color="#444443" label=<&lt;>]
+	node0 -> node8 [penwidth=0.3 color="#444443" label=<&ge;>]
+	
+            {
+                rank=same;
+                node1 -> node8 [style=invis]
+            }
+            
+    leaf3 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/leaf1_10183.svg"/></td>
-        </tr>
-        </table>>]
-	leaf3 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
-        
-        <tr>
-                <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/leaf3_10183.svg"/></td>
+                <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/leaf3_6418.svg"/></td>
         </tr>
         </table>>]
 	leaf4 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
         
         <tr>
-                <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/leaf4_10183.svg"/></td>
+                <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/leaf4_6418.svg"/></td>
+        </tr>
+        </table>>]
+	leaf6 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/leaf6_6418.svg"/></td>
+        </tr>
+        </table>>]
+	leaf7 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/leaf7_6418.svg"/></td>
+        </tr>
+        </table>>]
+	leaf10 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/leaf10_6418.svg"/></td>
+        </tr>
+        </table>>]
+	leaf11 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/leaf11_6418.svg"/></td>
+        </tr>
+        </table>>]
+	leaf13 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/leaf13_6418.svg"/></td>
+        </tr>
+        </table>>]
+	leaf14 [margin="0" shape=box penwidth="0" color="#444443" label=<<table border="0" CELLBORDER="0">
+        
+        <tr>
+                <td><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/leaf14_6418.svg"/></td>
         </tr>
         </table>>]
 
@@ -62,7 +162,7 @@ digraph G {
                 
         <table border="0" cellspacing="0" cellpadding="0">
             <tr>
-                <td border="0" cellspacing="0" cellpadding="0"><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/legend_10183.svg"/></td>
+                <td border="0" cellspacing="0" cellpadding="0"><img src="/var/folders/v2/x7q3c8217hdb9hwyfj7dgz9c0000gn/T/legend_6418.svg"/></td>
             </tr>
         </table>
         

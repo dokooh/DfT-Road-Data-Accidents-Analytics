@@ -20,43 +20,43 @@
                 "model_name": "prepare_data",
                 "model_type": "prepare_data",
                 "fit_level": "prepare_data",
-                "train_time": 27.808261156082153
+                "train_time": 2.826829195022583
             },
             {
                 "model_name": "1_Baseline",
                 "model_type": "Baseline",
                 "fit_level": "simple_algorithms",
-                "train_time": 2.2709529399871826
+                "train_time": 0.972315788269043
             },
             {
                 "model_name": "2_DecisionTree",
                 "model_type": "Decision Tree",
                 "fit_level": "simple_algorithms",
-                "train_time": 53.19670796394348
+                "train_time": 25.38916802406311
             },
             {
                 "model_name": "3_Default_Xgboost",
                 "model_type": "Xgboost",
                 "fit_level": "default_algorithms",
-                "train_time": 26.8866286277771
+                "train_time": 26.95308208465576
             },
             {
                 "model_name": "4_Default_NeuralNetwork",
                 "model_type": "Neural Network",
                 "fit_level": "default_algorithms",
-                "train_time": 17.003309965133667
+                "train_time": 31.966150999069214
             },
             {
                 "model_name": "5_Default_RandomForest",
                 "model_type": "Random Forest",
                 "fit_level": "default_algorithms",
-                "train_time": 16.876189708709717
+                "train_time": 11.152057886123657
             },
             {
                 "model_name": "Ensemble",
                 "model_type": "Ensemble",
                 "fit_level": "ensemble",
-                "train_time": 0.7919878959655762
+                "train_time": 0.714526891708374
             }
         ],
         "is_hill_climbing": false,
@@ -100,8 +100,8 @@
                 "explain_level": 2,
                 "name": "1_Baseline",
                 "status": "trained",
-                "final_loss": 0.8005151595449889,
-                "train_time": 2.2709529399871826,
+                "final_loss": 0.8035373509781305,
+                "train_time": 0.972315788269043,
                 "data_type": "original",
                 "max_time_for_learner": 360.0
             },
@@ -114,7 +114,11 @@
                     "max_cols_limit": null
                 },
                 "preprocessing": {
-                    "columns_preprocessing": {},
+                    "columns_preprocessing": {
+                        "Accident_Severity": [
+                            "categorical_to_int"
+                        ]
+                    },
                     "target_preprocessing": [
                         "na_exclude",
                         "categorical_to_int"
@@ -145,8 +149,8 @@
                 "explain_level": 2,
                 "name": "2_DecisionTree",
                 "status": "trained",
-                "final_loss": 1.9999999999893993e-06,
-                "train_time": 53.19670796394348,
+                "final_loss": 0.6971661214724714,
+                "train_time": 25.38916802406311,
                 "data_type": "original",
                 "max_time_for_learner": 360.0
             }
@@ -160,7 +164,11 @@
                     "max_cols_limit": null
                 },
                 "preprocessing": {
-                    "columns_preprocessing": {},
+                    "columns_preprocessing": {
+                        "Accident_Severity": [
+                            "categorical_to_int"
+                        ]
+                    },
                     "target_preprocessing": [
                         "na_exclude",
                         "categorical_to_int"
@@ -196,8 +204,8 @@
                 "explain_level": 2,
                 "name": "3_Default_Xgboost",
                 "status": "trained",
-                "final_loss": 2.1477725853858123e-05,
-                "train_time": 26.8866286277771,
+                "final_loss": 0.627086746231152,
+                "train_time": 26.95308208465576,
                 "data_type": "original",
                 "max_time_for_learner": 360.0
             },
@@ -208,73 +216,32 @@
                 },
                 "preprocessing": {
                     "columns_preprocessing": {
-                        "1st_Road_Class": [
-                            "scale_normal"
-                        ],
-                        "1st_Road_Number": [
-                            "scale_normal"
-                        ],
-                        "2nd_Road_Class": [
-                            "scale_normal"
-                        ],
-                        "2nd_Road_Number": [
-                            "scale_normal"
-                        ],
                         "Accident_Severity": [
-                            "scale_normal"
-                        ],
-                        "Day_of_Week": [
-                            "scale_normal"
-                        ],
-                        "Did_Police_Officer_Attend_Scene_of_Accident": [
-                            "scale_normal"
-                        ],
-                        "Junction_Control": [
-                            "scale_normal"
-                        ],
-                        "Junction_Detail": [
-                            "scale_normal"
-                        ],
-                        "Latitude": [
-                            "scale_normal"
-                        ],
-                        "Light_Conditions": [
-                            "scale_normal"
-                        ],
-                        "Local_Authority_(District)": [
-                            "scale_normal"
-                        ],
-                        "Location_Easting_OSGR": [
-                            "scale_normal"
-                        ],
-                        "Location_Northing_OSGR": [
-                            "scale_normal"
-                        ],
-                        "Longitude": [
-                            "scale_normal"
-                        ],
-                        "Number_of_Casualties": [
+                            "categorical_to_int",
                             "scale_normal"
                         ],
                         "Number_of_Vehicles": [
                             "scale_normal"
                         ],
-                        "Pedestrian_Crossing-Physical_Facilities": [
+                        "Number_of_Casualties": [
                             "scale_normal"
                         ],
-                        "Police_Force": [
-                            "scale_normal"
-                        ],
-                        "Road_Surface_Conditions": [
+                        "Day_of_Week": [
                             "scale_normal"
                         ],
                         "Road_Type": [
                             "scale_normal"
                         ],
-                        "Speed_limit": [
+                        "Pedestrian_Crossing-Physical_Facilities": [
                             "scale_normal"
                         ],
-                        "Urban_or_Rural_Area": [
+                        "Light_Conditions": [
+                            "scale_normal"
+                        ],
+                        "Weather_Conditions": [
+                            "scale_normal"
+                        ],
+                        "Road_Surface_Conditions": [
                             "scale_normal"
                         ]
                     },
@@ -309,8 +276,8 @@
                 "explain_level": 2,
                 "name": "4_Default_NeuralNetwork",
                 "status": "trained",
-                "final_loss": 0.00041165003321658514,
-                "train_time": 17.003309965133667,
+                "final_loss": 0.6490071613454897,
+                "train_time": 31.966150999069214,
                 "data_type": "original",
                 "max_time_for_learner": 360.0
             },
@@ -325,7 +292,11 @@
                     "max_cols_limit": null
                 },
                 "preprocessing": {
-                    "columns_preprocessing": {},
+                    "columns_preprocessing": {
+                        "Accident_Severity": [
+                            "categorical_to_int"
+                        ]
+                    },
                     "target_preprocessing": [
                         "na_exclude",
                         "categorical_to_int"
@@ -359,8 +330,8 @@
                 "explain_level": 2,
                 "name": "5_Default_RandomForest",
                 "status": "trained",
-                "final_loss": 1.9999999999893993e-06,
-                "train_time": 16.876189708709717,
+                "final_loss": 0.6804622371511646,
+                "train_time": 11.152057886123657,
                 "data_type": "original",
                 "max_time_for_learner": 360.0
             }
@@ -371,8 +342,8 @@
                 "is_stacked": false,
                 "name": "Ensemble",
                 "status": "trained",
-                "final_loss": 1.9999999999893993e-06,
-                "train_time": 0.7919878959655762
+                "final_loss": 0.627086745108889,
+                "train_time": 0.714526891708374
             }
         ]
     },

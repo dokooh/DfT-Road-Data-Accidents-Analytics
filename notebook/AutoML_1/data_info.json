@@ -1,111 +1,56 @@
 {
     "columns": [
-        "1st_Road_Class",
-        "1st_Road_Number",
-        "2nd_Road_Class",
-        "2nd_Road_Number",
         "Accident_Severity",
-        "Carriageway_Hazards",
-        "Day_of_Week",
-        "Did_Police_Officer_Attend_Scene_of_Accident",
-        "Junction_Control",
-        "Junction_Detail",
-        "Latitude",
-        "Light_Conditions",
-        "Local_Authority_(District)",
-        "Location_Easting_OSGR",
-        "Location_Northing_OSGR",
-        "Longitude",
-        "Number_of_Casualties",
         "Number_of_Vehicles",
+        "Number_of_Casualties",
+        "Day_of_Week",
+        "Road_Type",
         "Pedestrian_Crossing-Human_Control",
         "Pedestrian_Crossing-Physical_Facilities",
-        "Police_Force",
+        "Light_Conditions",
+        "Weather_Conditions",
         "Road_Surface_Conditions",
-        "Road_Type",
         "Special_Conditions_at_Site",
-        "Speed_limit",
-        "Urban_or_Rural_Area"
+        "Carriageway_Hazards"
     ],
-    "rows": 88152,
-    "cols": 26,
+    "rows": 89408,
+    "cols": 12,
     "target_is_numeric": true,
     "columns_info": {
-        "1st_Road_Class": [
-            "scale"
-        ],
-        "1st_Road_Number": [
-            "scale"
-        ],
-        "2nd_Road_Class": [
-            "scale"
-        ],
-        "2nd_Road_Number": [
-            "scale"
-        ],
         "Accident_Severity": [
-            "scale"
+            "categorical",
+            "few_categories"
         ],
-        "Carriageway_Hazards": [],
-        "Day_of_Week": [
-            "scale"
-        ],
-        "Did_Police_Officer_Attend_Scene_of_Accident": [
-            "scale"
-        ],
-        "Junction_Control": [
-            "scale"
-        ],
-        "Junction_Detail": [
-            "scale"
-        ],
-        "Latitude": [
-            "scale"
-        ],
-        "Light_Conditions": [
-            "scale"
-        ],
-        "Local_Authority_(District)": [
-            "scale"
-        ],
-        "Location_Easting_OSGR": [
-            "scale"
-        ],
-        "Location_Northing_OSGR": [
-            "scale"
-        ],
-        "Longitude": [
+        "Number_of_Vehicles": [
             "scale"
         ],
         "Number_of_Casualties": [
             "scale"
         ],
-        "Number_of_Vehicles": [
+        "Day_of_Week": [
+            "scale"
+        ],
+        "Road_Type": [
             "scale"
         ],
         "Pedestrian_Crossing-Human_Control": [],
         "Pedestrian_Crossing-Physical_Facilities": [
             "scale"
         ],
-        "Police_Force": [
+        "Light_Conditions": [
+            "scale"
+        ],
+        "Weather_Conditions": [
             "scale"
         ],
         "Road_Surface_Conditions": [
             "scale"
         ],
-        "Road_Type": [
-            "scale"
-        ],
         "Special_Conditions_at_Site": [],
-        "Speed_limit": [
-            "scale"
-        ],
-        "Urban_or_Rural_Area": [
-            "scale"
-        ]
+        "Carriageway_Hazards": []
     },
     "target_info": [],
-    "n_features": 26,
+    "n_features": 12,
     "is_sample_weighted": false,
     "n_classes": 3,
     "num_class": 3

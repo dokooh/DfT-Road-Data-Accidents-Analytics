@@ -1,111 +1,55 @@
 {
-    "uid": "20b7f52f-96eb-4a3c-9069-50e9b87ce44b",
+    "uid": "cda13a8d-756b-47d1-83cf-05e612613269",
     "name": "4_Default_NeuralNetwork",
     "preprocessing": [
         {
             "scale": [
                 {
                     "scale": [
-                        1.4625892916790786,
-                        1680.3309726034704,
-                        3.210253659190237,
-                        1161.0211457522582,
-                        0.4502694286118749,
-                        1.9202850043575717,
-                        0.639542418344457,
-                        2.3531541532953306,
-                        2.6887071034051835,
-                        1.3583736188612778,
-                        1.7311370455219086,
-                        256.10779902963225,
-                        94855.79085722774,
-                        150807.53358371896,
-                        1.3899129168911553,
-                        0.7680325149106279,
-                        0.7128773823377039,
-                        1.992123717416019,
-                        24.57640558500665,
-                        0.5995225959267241,
-                        1.675021746489705,
-                        14.04607331869271,
-                        0.46807757683149
+                        0.4474490293791486,
+                        0.7014717182295545,
+                        0.7228723150609137,
+                        1.9204025108833631,
+                        1.6817235538047002,
+                        2.002831445641161,
+                        1.7343275136951422,
+                        1.8241987086435958,
+                        0.5934246405121669
                     ],
                     "mean": [
-                        4.1956620382974865,
-                        857.6657288925189,
-                        2.6107934779320567,
-                        305.84110778352544,
-                        2.774132558913392,
-                        4.11744864930272,
-                        1.394424781438122,
-                        1.5304171582418247,
-                        2.3012826330278005,
-                        52.39817116409535,
-                        2.0455576731100824,
-                        324.8597271379738,
-                        452665.45209032885,
-                        278990.4523172097,
-                        -1.2456070473575944,
-                        1.3079075536195057,
-                        1.8408657772937653,
-                        0.8583356021417552,
-                        28.061378830504886,
-                        1.2896512085186194,
-                        5.218834134978976,
-                        36.70621956015368,
-                        1.3225791814139214
+                        2.7766642806012887,
+                        1.8424600334049153,
+                        1.2972590073968027,
+                        4.1065378191362445,
+                        5.214059890240993,
+                        0.8637407539966595,
+                        2.050763540921021,
+                        1.6599558577905034,
+                        1.2858208064900978
                     ],
                     "var": [
-                        2.1391674361343087,
-                        2823512.177490525,
-                        10.305728556344306,
-                        1347970.1008838865,
-                        0.2027425583424643,
-                        3.687494497960559,
-                        0.4090145048618764,
-                        5.537334469171065,
-                        7.229145887901493,
-                        1.8451788884182843,
-                        2.996835470378323,
-                        65591.2047238025,
-                        8997621059.15013,
-                        22742912185.604527,
-                        1.9318579165408796,
-                        0.5898739439599437,
-                        0.5081941622486569,
-                        3.9685569054914183,
-                        603.999711478746,
-                        0.35942734302671814,
-                        2.8056978512134214,
-                        197.2921756740912,
-                        0.21909661793243942
+                        0.20021063389234217,
+                        0.49206257147592347,
+                        0.5225443838815248,
+                        3.6879458038071258,
+                        2.8281941114215106,
+                        4.011333799649062,
+                        3.0078919247599734,
+                        3.327700928616962,
+                        0.35215280396699455
                     ],
-                    "n_samples_seen": 66114,
-                    "n_features_in": 23,
+                    "n_samples_seen": 67056,
+                    "n_features_in": 9,
                     "columns": [
-                        "1st_Road_Class",
-                        "1st_Road_Number",
-                        "2nd_Road_Class",
-                        "2nd_Road_Number",
                         "Accident_Severity",
-                        "Day_of_Week",
-                        "Did_Police_Officer_Attend_Scene_of_Accident",
-                        "Junction_Control",
-                        "Junction_Detail",
-                        "Latitude",
-                        "Light_Conditions",
-                        "Local_Authority_(District)",
-                        "Location_Easting_OSGR",
-                        "Location_Northing_OSGR",
-                        "Longitude",
-                        "Number_of_Casualties",
                         "Number_of_Vehicles",
-                        "Pedestrian_Crossing-Physical_Facilities",
-                        "Police_Force",
-                        "Road_Surface_Conditions",
+                        "Number_of_Casualties",
+                        "Day_of_Week",
                         "Road_Type",
-                        "Speed_limit",
-                        "Urban_or_Rural_Area"
+                        "Pedestrian_Crossing-Physical_Facilities",
+                        "Light_Conditions",
+                        "Weather_Conditions",
+                        "Road_Surface_Conditions"
                     ],
                     "scale_method": "scale_normal"
                 }
@@ -118,73 +62,32 @@
             "ml_task": "multiclass_classification",
             "params": {
                 "columns_preprocessing": {
-                    "1st_Road_Class": [
-                        "scale_normal"
-                    ],
-                    "1st_Road_Number": [
-                        "scale_normal"
-                    ],
-                    "2nd_Road_Class": [
-                        "scale_normal"
-                    ],
-                    "2nd_Road_Number": [
-                        "scale_normal"
-                    ],
                     "Accident_Severity": [
-                        "scale_normal"
-                    ],
-                    "Day_of_Week": [
-                        "scale_normal"
-                    ],
-                    "Did_Police_Officer_Attend_Scene_of_Accident": [
-                        "scale_normal"
-                    ],
-                    "Junction_Control": [
-                        "scale_normal"
-                    ],
-                    "Junction_Detail": [
-                        "scale_normal"
-                    ],
-                    "Latitude": [
-                        "scale_normal"
-                    ],
-                    "Light_Conditions": [
-                        "scale_normal"
-                    ],
-                    "Local_Authority_(District)": [
-                        "scale_normal"
-                    ],
-                    "Location_Easting_OSGR": [
-                        "scale_normal"
-                    ],
-                    "Location_Northing_OSGR": [
-                        "scale_normal"
-                    ],
-                    "Longitude": [
-                        "scale_normal"
-                    ],
-                    "Number_of_Casualties": [
+                        "categorical_to_int",
                         "scale_normal"
                     ],
                     "Number_of_Vehicles": [
                         "scale_normal"
                     ],
-                    "Pedestrian_Crossing-Physical_Facilities": [
+                    "Number_of_Casualties": [
                         "scale_normal"
                     ],
-                    "Police_Force": [
-                        "scale_normal"
-                    ],
-                    "Road_Surface_Conditions": [
+                    "Day_of_Week": [
                         "scale_normal"
                     ],
                     "Road_Type": [
                         "scale_normal"
                     ],
-                    "Speed_limit": [
+                    "Pedestrian_Crossing-Physical_Facilities": [
                         "scale_normal"
                     ],
-                    "Urban_or_Rural_Area": [
+                    "Light_Conditions": [
+                        "scale_normal"
+                    ],
+                    "Weather_Conditions": [
+                        "scale_normal"
+                    ],
+                    "Road_Surface_Conditions": [
                         "scale_normal"
                     ]
                 },
@@ -201,7 +104,7 @@
             "library_version": "0.24.1",
             "algorithm_name": "Neural Network",
             "algorithm_short_name": "Neural Network",
-            "uid": "97ccb107-6a7c-449c-802c-ac1af758a788",
+            "uid": "936e5007-77ca-412b-9442-831e94d9b3c1",
             "params": {
                 "model_type": "Neural Network",
                 "ml_task": "multiclass_classification",
@@ -223,73 +126,32 @@
         },
         "preprocessing": {
             "columns_preprocessing": {
-                "1st_Road_Class": [
-                    "scale_normal"
-                ],
-                "1st_Road_Number": [
-                    "scale_normal"
-                ],
-                "2nd_Road_Class": [
-                    "scale_normal"
-                ],
-                "2nd_Road_Number": [
-                    "scale_normal"
-                ],
                 "Accident_Severity": [
-                    "scale_normal"
-                ],
-                "Day_of_Week": [
-                    "scale_normal"
-                ],
-                "Did_Police_Officer_Attend_Scene_of_Accident": [
-                    "scale_normal"
-                ],
-                "Junction_Control": [
-                    "scale_normal"
-                ],
-                "Junction_Detail": [
-                    "scale_normal"
-                ],
-                "Latitude": [
-                    "scale_normal"
-                ],
-                "Light_Conditions": [
-                    "scale_normal"
-                ],
-                "Local_Authority_(District)": [
-                    "scale_normal"
-                ],
-                "Location_Easting_OSGR": [
-                    "scale_normal"
-                ],
-                "Location_Northing_OSGR": [
-                    "scale_normal"
-                ],
-                "Longitude": [
-                    "scale_normal"
-                ],
-                "Number_of_Casualties": [
+                    "categorical_to_int",
                     "scale_normal"
                 ],
                 "Number_of_Vehicles": [
                     "scale_normal"
                 ],
-                "Pedestrian_Crossing-Physical_Facilities": [
+                "Number_of_Casualties": [
                     "scale_normal"
                 ],
-                "Police_Force": [
-                    "scale_normal"
-                ],
-                "Road_Surface_Conditions": [
+                "Day_of_Week": [
                     "scale_normal"
                 ],
                 "Road_Type": [
                     "scale_normal"
                 ],
-                "Speed_limit": [
+                "Pedestrian_Crossing-Physical_Facilities": [
                     "scale_normal"
                 ],
-                "Urban_or_Rural_Area": [
+                "Light_Conditions": [
+                    "scale_normal"
+                ],
+                "Weather_Conditions": [
+                    "scale_normal"
+                ],
+                "Road_Surface_Conditions": [
                     "scale_normal"
                 ]
             },
@@ -334,7 +196,7 @@
     ],
     "predictions_fname": "4_Default_NeuralNetwork/predictions_validation.csv",
     "metric_name": "logloss",
-    "final_loss": 0.00041165003321658514,
-    "train_time": 16.369503021240234,
+    "final_loss": 0.6490071613454897,
+    "train_time": 31.226543188095093,
     "is_stacked": false
 }

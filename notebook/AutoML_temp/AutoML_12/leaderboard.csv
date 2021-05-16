@@ -1,0 +1,3 @@
+name,model_type,metric_type,metric_value,train_time
+1_Baseline,Baseline,logloss,1.0986107818327118,1.5
+2_DecisionTree,Decision Tree,logloss,0.9237439241976829,29.16

@@ -1,0 +1,13 @@
+feature,shap_importance
+Pedestrian_Crossing-Physical_Facilities,0.30027990101515917
+Pedestrian_Crossing-Human_Control,0.12380975916727
+Carriageway_Hazards,0.00319288508687647
+Road_Type,0.002478168954872962
+Accident_Severity,0.0
+Number_of_Vehicles,0.0
+Number_of_Casualties,0.0
+Day_of_Week,0.0
+Light_Conditions,0.0
+Weather_Conditions,0.0
+Road_Surface_Conditions,0.0
+Special_Conditions_at_Site,0.0

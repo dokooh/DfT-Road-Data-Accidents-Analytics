@@ -45,8 +45,8 @@
         "Ensemble"
     ],
     "fit_level": "finished",
-    "best_model": "2_DecisionTree",
+    "best_model": "3_Default_Xgboost",
     "load_on_predict": [
-        "2_DecisionTree"
+        "3_Default_Xgboost"
     ]
 }
