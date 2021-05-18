@@ -1,0 +1,202 @@
+{
+    "uid": "c33c0947-4be1-489a-b773-14c9745ae27f",
+    "name": "4_Default_NeuralNetwork",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        0.3894472195262696,
+                        0.6043820288306109,
+                        0.5913580401219098,
+                        1.8968703949333705,
+                        1.884609487629837,
+                        2.123964172397373,
+                        1.7756836455693672,
+                        2.2667094468615137,
+                        0.6303881114912729
+                    ],
+                    "mean": [
+                        2.837548190344669,
+                        1.7958455607342194,
+                        1.1988391161746936,
+                        4.0769175441624945,
+                        5.286545543472006,
+                        0.8947364635479602,
+                        2.0324961160020716,
+                        1.9283618159848093,
+                        1.1655014672881063
+                    ],
+                    "var": [
+                        0.15166913679674243,
+                        0.3652776367734053,
+                        0.3497043316168263,
+                        3.5981172951746814,
+                        3.5517529208643963,
+                        4.511223805627656,
+                        3.1530524091425183,
+                        5.13797171649123,
+                        0.3973891711095336
+                    ],
+                    "n_samples_seen": 139032,
+                    "n_features_in": 9,
+                    "columns": [
+                        "Accident_Severity",
+                        "Number_of_Vehicles",
+                        "Number_of_Casualties",
+                        "Day_of_Week",
+                        "Road_Type",
+                        "Pedestrian_Crossing-Physical_Facilities",
+                        "Light_Conditions",
+                        "Weather_Conditions",
+                        "Road_Surface_Conditions"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "categorical_y": {
+                "1": 0,
+                "2": 1,
+                "3": 2
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "Accident_Severity": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "Number_of_Vehicles": [
+                        "scale_normal"
+                    ],
+                    "Number_of_Casualties": [
+                        "scale_normal"
+                    ],
+                    "Day_of_Week": [
+                        "scale_normal"
+                    ],
+                    "Road_Type": [
+                        "scale_normal"
+                    ],
+                    "Pedestrian_Crossing-Physical_Facilities": [
+                        "scale_normal"
+                    ],
+                    "Light_Conditions": [
+                        "scale_normal"
+                    ],
+                    "Weather_Conditions": [
+                        "scale_normal"
+                    ],
+                    "Road_Surface_Conditions": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "0.24.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "eaee434d-f9e9-4849-b216-039f88612ce4",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "dense_1_size": 32,
+                "dense_2_size": 16,
+                "learning_rate": 0.05,
+                "seed": 4,
+                "num_class": 3,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Accident_Severity": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "Number_of_Vehicles": [
+                    "scale_normal"
+                ],
+                "Number_of_Casualties": [
+                    "scale_normal"
+                ],
+                "Day_of_Week": [
+                    "scale_normal"
+                ],
+                "Road_Type": [
+                    "scale_normal"
+                ],
+                "Pedestrian_Crossing-Physical_Facilities": [
+                    "scale_normal"
+                ],
+                "Light_Conditions": [
+                    "scale_normal"
+                ],
+                "Weather_Conditions": [
+                    "scale_normal"
+                ],
+                "Road_Surface_Conditions": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_2/X.parquet",
+            "y_path": "AutoML_2/y.parquet",
+            "results_path": "AutoML_2"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "dense_1_size": 32,
+            "dense_2_size": 16,
+            "learning_rate": 0.05,
+            "seed": 4,
+            "num_class": 3,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "4_Default_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "4_Default_NeuralNetwork/learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "4_Default_NeuralNetwork/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 0.8170907604077614,
+    "train_time": 93.2665331363678,
+    "is_stacked": false
+}

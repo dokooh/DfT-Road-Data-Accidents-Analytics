@@ -1,0 +1,57 @@
+{
+    "columns": [
+        "Accident_Severity",
+        "Number_of_Vehicles",
+        "Number_of_Casualties",
+        "Day_of_Week",
+        "Road_Type",
+        "Pedestrian_Crossing-Human_Control",
+        "Pedestrian_Crossing-Physical_Facilities",
+        "Light_Conditions",
+        "Weather_Conditions",
+        "Road_Surface_Conditions",
+        "Special_Conditions_at_Site",
+        "Carriageway_Hazards"
+    ],
+    "rows": 185376,
+    "cols": 12,
+    "target_is_numeric": true,
+    "columns_info": {
+        "Accident_Severity": [
+            "categorical",
+            "few_categories"
+        ],
+        "Number_of_Vehicles": [
+            "scale"
+        ],
+        "Number_of_Casualties": [
+            "scale"
+        ],
+        "Day_of_Week": [
+            "scale"
+        ],
+        "Road_Type": [
+            "scale"
+        ],
+        "Pedestrian_Crossing-Human_Control": [],
+        "Pedestrian_Crossing-Physical_Facilities": [
+            "scale"
+        ],
+        "Light_Conditions": [
+            "scale"
+        ],
+        "Weather_Conditions": [
+            "scale"
+        ],
+        "Road_Surface_Conditions": [
+            "scale"
+        ],
+        "Special_Conditions_at_Site": [],
+        "Carriageway_Hazards": []
+    },
+    "target_info": [],
+    "n_features": 12,
+    "is_sample_weighted": false,
+    "n_classes": 3,
+    "num_class": 3
+}
